@@ -4,9 +4,9 @@ import { useState, useMemo } from "react";
 
 export default function EMICalculator() {
   // --- State Hooks ---
-  const [loanAmount, setLoanAmount] = useState(0); // Default ₹50 Lakhs
+  const [loanAmount, setLoanAmount] = useState(10000); // Default ₹10 thousand
   const [interestRate, setInterestRate] = useState(8.5); // Default 8.5%
-  const [tenureYears, setTenureYears] = useState(0);    // Default 15 Years
+  const [tenureYears, setTenureYears] = useState(1);    // Default 1 Year
   const [tenureMonths, setTenureMonths] = useState(0);    // Default 0 Months
   const [isScheduleOpen, setIsScheduleOpen] = useState(false); // Collapsible table state
 
