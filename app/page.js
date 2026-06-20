@@ -138,9 +138,30 @@ export default function EMICalculator() {
           href="https://digitalheroesco.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-sm font-semibold rounded-md text-[#0F1729] bg-[#FAF7F2] hover:bg-slate-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[#0F1729] focus:ring-[#FAF7F2] transition-all transform hover:scale-[1.02] shadow-lg active:scale-95"
+          className="group relative inline-flex items-center justify-center px-6 py-3 text-sm font-bold rounded-xl text-white overflow-hidden transition-all duration-300 transform hover:scale-[1.02] active:scale-95 animate-pulse-glow border border-emerald-500/20"
         >
-          Built for Digital Heroes
+          {/* Gradient background */}
+          <span className="absolute inset-0 bg-gradient-to-r from-emerald-600 via-teal-500 to-emerald-600 opacity-95 transition-all duration-300 group-hover:opacity-100" />
+          
+          {/* Subtle light reflect shimmer */}
+          <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out" />
+          
+          <span className="relative flex items-center gap-2">
+            <svg
+              className="w-4 h-4 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2.5}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M13 10V3L4 14h7v7l9-11h-7z"
+              />
+            </svg>
+            Built for Digital Heroes
+          </span>
         </a>
       </header>
 
@@ -449,24 +470,61 @@ export default function EMICalculator() {
       </section>
 
       {/* Footer Section */}
-      <footer className="mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4 text-slate-400 text-xs">
-        <div className="flex flex-col items-center md:items-start gap-1">
-          <p className="font-semibold text-slate-300">
-            Developer Portfolio & Contact
+      <footer className="mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-6 text-slate-400 text-xs">
+        <div className="flex flex-col items-center md:items-start gap-3">
+          <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">
+            Designed & Developed by
           </p>
-          <p className="flex items-center gap-1.5">
-            <span className="font-bold text-[#FAF7F2]">Muzahir Ali</span>
-            <span>•</span>
+          <div className="flex flex-wrap items-center justify-center md:justify-start gap-3">
+            <span className="text-base font-bold text-[#FAF7F2] tracking-tight bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">
+              Muzahir Ali
+            </span>
+            <span className="hidden md:inline text-slate-800">|</span>
             <a
               href="mailto:muzahirraza509@gmail.com"
-              className="underline hover:text-white transition-colors"
+              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-slate-800 bg-slate-900/40 text-slate-300 hover:text-emerald-400 hover:border-emerald-500/30 hover:bg-emerald-500/5 transition-all duration-300"
             >
+              <svg
+                className="w-3.5 h-3.5 text-slate-500 group-hover:text-emerald-400 transition-colors"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
               muzahirraza509@gmail.com
             </a>
-          </p>
+            <a
+              href="https://muzahir-portfolio.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-slate-800 bg-slate-900/40 text-slate-300 hover:text-sky-400 hover:border-sky-500/30 hover:bg-sky-500/5 transition-all duration-300 shadow-sm"
+            >
+              <svg
+                className="w-3.5 h-3.5 text-slate-500 group-hover:text-sky-400 transition-colors"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                />
+              </svg>
+              muzahir-portfolio.vercel.app
+            </a>
+          </div>
         </div>
-        <div className="text-center md:text-right">
-          <p>© {new Date().getFullYear()} EMI Calculator. All client-side computations. No logs recorded.</p>
+        <div className="text-center md:text-right flex flex-col gap-1 text-slate-500">
+          <p>© {new Date().getFullYear()} EMI Calculator. All client-side computations.</p>
+          <p className="text-[10px]">No tracking, cookies, or database logs recorded.</p>
         </div>
       </footer>
     </div>
