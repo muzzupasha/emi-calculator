@@ -134,35 +134,6 @@ export default function EMICalculator() {
             Calculate your monthly home, car, or personal loan installments instantly.
           </p>
         </div>
-        <a
-          href="https://digitalheroesco.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group relative inline-flex items-center justify-center px-6 py-3 text-sm font-bold rounded-xl text-white overflow-hidden transition-all duration-300 transform hover:scale-[1.02] active:scale-95 animate-pulse-glow border border-emerald-500/20"
-        >
-          {/* Gradient background */}
-          <span className="absolute inset-0 bg-gradient-to-r from-emerald-600 via-teal-500 to-emerald-600 opacity-95 transition-all duration-300 group-hover:opacity-100" />
-          
-          {/* Subtle light reflect shimmer */}
-          <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out" />
-          
-          <span className="relative flex items-center gap-2">
-            <svg
-              className="w-4 h-4 text-white"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2.5}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M13 10V3L4 14h7v7l9-11h-7z"
-              />
-            </svg>
-            Built for Digital Heroes
-          </span>
-        </a>
       </header>
 
       {/* Main Grid Layout */}

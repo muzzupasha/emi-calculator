@@ -83,6 +83,5 @@ npm run start
 
 ## 🎖️ Credits & Developer
 
-* Built for **[Digital Heroes Co.](https://digitalheroesco.com)**
 * **Developer**: Muzahir Ali
 * **Email**: [muzahirraza509@gmail.com](mailto:muzahirraza509@gmail.com)
